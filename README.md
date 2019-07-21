@@ -1,6 +1,6 @@
 # Two_Dots
 TODO List:
-*Add Background
+*Add Background\n
 *Add Balls
 *Add Little Balls
 *Create Main Menu
