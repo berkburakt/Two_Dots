@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - backGround
+  - Characters
+  - Lightning
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer
+    uniqueID: 2197625137
+    locked: 0
+  - name: New Layer
+    uniqueID: 1785901749
+    locked: 0
+  - name: New Layer
+    uniqueID: 1109487635
     locked: 0
