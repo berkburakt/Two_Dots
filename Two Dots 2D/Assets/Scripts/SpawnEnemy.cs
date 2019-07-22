@@ -5,7 +5,8 @@ using UnityEngine;
 public class SpawnEnemy : MonoBehaviour
 
 {
-    public GameObject EnemyBall;
+    public GameObject EnemyBallGreen;
+    public GameObject EnemyBallPurple;
     public GameObject Player;
 
     public Vector3 center;
@@ -20,7 +21,7 @@ public class SpawnEnemy : MonoBehaviour
     void Start()
     {
         StartCoroutine(spawnRandomly());
-        
+
     }
 
     // Update is called once per frame
@@ -32,8 +33,10 @@ public class SpawnEnemy : MonoBehaviour
     IEnumerator spawnRandomly()
     {
         int i;
+        GameObject EnemyBall;
         for (i = 0; i < spawnNumber; i++)
         {
+            EnemyBall = Random.Range(0, 2) == 0 ? EnemyBallGreen : EnemyBallPurple;
             spawnBody(EnemyBall);
             yield return new WaitForSecondsRealtime(1f);
         }
