@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5728444417619170765}
   - component: {fileID: 9069746112169218606}
   - component: {fileID: -5425180929270908327}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EnemyBallGreen
   m_TagString: EnemyGreen
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8564880102201324957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32699692, y: 0.39899018, z: 2.0636425}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children: []
   m_Father: {fileID: 0}
@@ -147,7 +147,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: Infinity
+  m_Time: 1
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -163,13 +163,22 @@ TrailRenderer:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0.5051575
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.53333336, g: 1, b: 0.33333334, a: 1}
-      key1: {r: 0.7568628, g: 0.7568628, b: 0.7568628, a: 1}
+      key0: {r: 0.8509804, g: 0.101960786, b: 0.05882353, a: 1}
+      key1: {r: 0.8509804, g: 0.101960786, b: 0.05882353, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -185,7 +194,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 37201
+      atime1: 65535
       atime2: 0
       atime3: 0
       atime4: 0

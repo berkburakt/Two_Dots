@@ -40,6 +40,12 @@ public class EnemyDetection : MonoBehaviour
         cameraShake.transform.localPosition = originalPos;
     }
 
+    public IEnumerator DestroyObject(GameObject obj)
+    {
+        yield return new WaitForSeconds(2);
+        Destroy(obj);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if(transform.name == "GreenBall")
@@ -47,9 +53,13 @@ public class EnemyDetection : MonoBehaviour
             if(collision.transform.tag == "EnemyGreen")
             {
                 StartCoroutine(Shake(0.1f, 0.1f));
-                Destroy(collision.gameObject);
-                
-            } else
+                collision.gameObject.GetComponent<MeshRenderer>().enabled = false;
+                collision.gameObject.GetComponent<SphereCollider>().enabled = false;
+                collision.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+                StartCoroutine(DestroyObject(collision.gameObject));
+
+            }
+            else
             {
 
             }
@@ -58,8 +68,11 @@ public class EnemyDetection : MonoBehaviour
             if (collision.transform.tag == "EnemyPurple")
             {
                 StartCoroutine(Shake(0.1f, 0.1f));
-                Destroy(collision.gameObject);
-                
+                collision.gameObject.GetComponent<MeshRenderer>().enabled = false;
+                collision.gameObject.GetComponent<SphereCollider>().enabled = false;
+                collision.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
+                StartCoroutine(DestroyObject(collision.gameObject));
+
             }
             else
             {

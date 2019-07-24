@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3283605308832455610}
   - component: {fileID: 3283605308832455611}
   - component: {fileID: -3940767150699902164}
-  - component: {fileID: -5679772667699343846}
-  m_Layer: 0
+  - component: {fileID: 6880083093130978369}
+  m_Layer: 11
   m_Name: EnemyBallPurple
   m_TagString: EnemyPurple
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3283605308832455588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3029041, y: -1.1377524, z: 11.180456}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,7 +109,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!96 &-5679772667699343846
+--- !u!96 &6880083093130978369
 TrailRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
@@ -147,10 +147,10 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 5
+  m_Time: 1
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 1.0024219
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -163,13 +163,22 @@ TrailRenderer:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0.51031494
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0.6, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.0627451, g: 0, b: 1, a: 1}
+      key1: {r: 0.0627451, g: 0, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
