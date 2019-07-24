@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - EnemyRed
+  - EnemyBlue
   - EnemyPurple
-  - EnemyGreen
   layers:
   - Default
   - TransparentFX

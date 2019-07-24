@@ -48,9 +48,9 @@ public class EnemyDetection : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(transform.name == "GreenBall")
+        if(transform.name == "RedBall")
         {
-            if(collision.transform.tag == "EnemyGreen")
+            if(collision.transform.tag == "EnemyRed")
             {
                 StartCoroutine(Shake(0.1f, 0.1f));
                 collision.gameObject.GetComponent<MeshRenderer>().enabled = false;
@@ -65,7 +65,7 @@ public class EnemyDetection : MonoBehaviour
             }
         } else
         {
-            if (collision.transform.tag == "EnemyPurple")
+            if (collision.transform.tag == "EnemyBlue")
             {
                 StartCoroutine(Shake(0.1f, 0.1f));
                 collision.gameObject.GetComponent<MeshRenderer>().enabled = false;

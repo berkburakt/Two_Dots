@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &329999372
 Light:
   m_ObjectHideFlags: 0
@@ -610,6 +610,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6926156897452549024}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2010622028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010622025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de8fd47241a487b4884125dce1e97d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6926156897452549024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -637,6 +649,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 6926156896031284070, guid: 3cd4ffc1cee656f499a159ea7ce61296,
+        type: 3}
+      propertyPath: m_Name
+      value: BlueBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6926156896031284070, guid: 3cd4ffc1cee656f499a159ea7ce61296,
+        type: 3}
+      propertyPath: m_TagString
+      value: EnemyBlue
+      objectReference: {fileID: 0}
     - target: {fileID: 6926156896959936182, guid: 3cd4ffc1cee656f499a159ea7ce61296,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -646,6 +668,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6926156896959936182, guid: 3cd4ffc1cee656f499a159ea7ce61296,
+        type: 3}
+      propertyPath: m_Name
+      value: RedBall
       objectReference: {fileID: 0}
     - target: {fileID: 6926156895595023339, guid: 3cd4ffc1cee656f499a159ea7ce61296,
         type: 3}

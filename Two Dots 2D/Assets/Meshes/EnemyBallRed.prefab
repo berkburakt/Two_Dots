@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 9069746112169218606}
   - component: {fileID: -5425180929270908327}
   m_Layer: 11
-  m_Name: EnemyBallGreen
-  m_TagString: EnemyGreen
+  m_Name: EnemyBallRed
+  m_TagString: EnemyRed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
