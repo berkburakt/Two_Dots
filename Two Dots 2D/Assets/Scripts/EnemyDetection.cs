@@ -7,27 +7,6 @@ public class EnemyDetection : MonoBehaviour
 {
     public GameObject cameraShake;
 
-    public Text ScoreText;
-    public bool isCollided;
-    public static int score;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        ScoreText.text = "Score: " + score.ToString();
-        
-    }
-
-    public void ScoreCount()
-    {
-
-
-    }
 
     public IEnumerator Shake(float duration, float magnitude)
     {
@@ -66,8 +45,7 @@ public class EnemyDetection : MonoBehaviour
                 collision.gameObject.GetComponent<SphereCollider>().enabled = false;
                 collision.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
                 StartCoroutine(DestroyObject(collision.gameObject));
-                score += 1;
-                Debug.Log(score);
+                transform.parent.GetComponent<ScoreCount>().IncreaseScore();
 
             }
             else
@@ -83,8 +61,7 @@ public class EnemyDetection : MonoBehaviour
                 collision.gameObject.GetComponent<SphereCollider>().enabled = false;
                 collision.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
                 StartCoroutine(DestroyObject(collision.gameObject));
-                score += 1;
-                Debug.Log(score);
+                transform.parent.GetComponent<ScoreCount>().IncreaseScore();
 
             }
             else

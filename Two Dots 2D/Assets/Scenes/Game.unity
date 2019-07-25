@@ -483,8 +483,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraShake: {fileID: 519420028}
-  ScoreText: {fileID: 0}
-  isCollided: 0
 --- !u!1 &991154494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6926156896959936182, guid: 3cd4ffc1cee656f499a159ea7ce61296,
@@ -504,8 +502,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraShake: {fileID: 519420028}
-  ScoreText: {fileID: 1432891683}
-  isCollided: 0
 --- !u!1 &1179960845
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8fd47241a487b4884125dce1e97d3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreText: {fileID: 1432891683}
 --- !u!1001 &6926156897452549024
 PrefabInstance:
   m_ObjectHideFlags: 0
