@@ -13,11 +13,7 @@ public class ScoreCount : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "EnemyPurple")
-        {
-            score += 1;
-            Debug.Log(score);
-        }  
+        
     }
 
     // Update is called once per frame

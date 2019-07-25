@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyDetection : MonoBehaviour
 {
     public GameObject cameraShake;
 
+    public Text ScoreText;
     public bool isCollided;
+    public static int score;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +19,14 @@ public class EnemyDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        ScoreText.text = "Score: " + score.ToString();
         
+    }
+
+    public void ScoreCount()
+    {
+
+
     }
 
     public IEnumerator Shake(float duration, float magnitude)
@@ -57,6 +66,8 @@ public class EnemyDetection : MonoBehaviour
                 collision.gameObject.GetComponent<SphereCollider>().enabled = false;
                 collision.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
                 StartCoroutine(DestroyObject(collision.gameObject));
+                score += 1;
+                Debug.Log(score);
 
             }
             else
@@ -72,6 +83,8 @@ public class EnemyDetection : MonoBehaviour
                 collision.gameObject.GetComponent<SphereCollider>().enabled = false;
                 collision.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
                 StartCoroutine(DestroyObject(collision.gameObject));
+                score += 1;
+                Debug.Log(score);
 
             }
             else
